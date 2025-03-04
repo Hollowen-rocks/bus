@@ -128,7 +128,10 @@
   <main id="main">
     <section class="hero" id="hero" role="banner" aria-label="Hero Slide">
       <h1 data-aos="fade-up">Gymshark Revolution</h1>
-      <p data-aos="fade-up" data-aos-delay="200">Welcome to an immersive presentation on Ben Francis—the visionary who transformed a modest garage venture into a global fitness empire. Use the arrow keys or click the down arrow to navigate through the slides.</p>
+      <p data-aos="fade-up" data-aos-delay="200">
+        Welcome to an immersive presentation on Ben Francis—the visionary who transformed a modest garage venture into a global fitness empire.
+        Use the arrow keys or click the down arrow to navigate through the slides.
+      </p>
       <div class="scroll-down" onclick="smoothScroll('#about')" data-aos="fade-up" data-aos-delay="400" aria-label="Scroll Down">&#x2193;</div>
     </section>
     <section id="about" role="region" aria-labelledby="about-heading">
@@ -138,7 +141,9 @@
           <p>Born on 4 June 1992 in the West Midlands, England, Ben Francis showed a natural aptitude for technology and innovation from a young age. His early ventures—ranging from selling car number plates online to self-teaching coding—foreshadowed the entrepreneurial journey ahead.</p>
           <p>At 19, he co-founded Gymshark in his parents’ garage, merging his passion for fitness with his digital savvy. Today, Gymshark is a billion‑pound brand, celebrated for its disruptive marketing and strong community focus.</p>
         </div>
-        <div data-aos="fade-left"><img src="benfranklin.png" alt="Portrait of Ben Francis" style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.3);"></div>
+        <div data-aos="fade-left">
+          <img src="benfranklin.png" alt="Portrait of Ben Francis" style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+        </div>
       </div>
     </section>
     <section id="personal" role="region" aria-labelledby="personal-heading">
@@ -341,6 +346,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script>
+    // Helper for smooth scrolling
+    function smoothScroll(target) {
+      document.querySelector(target).scrollIntoView({ behavior: "smooth" });
+    }
     AOS.init({ duration: 1000, once: true });
     particlesJS("particles-js", {"particles": {"number": {"value": 80, "density": {"enable": true, "value_area": 800}}, "color": {"value": "#ff4081"}, "shape": {"type": "circle", "stroke": {"width": 0, "color": "#000"}, "polygon": {"nb_sides": 5}}, "opacity": {"value": 0.5, "random": false}, "size": {"value": 3, "random": true}, "line_linked": {"enable": true, "distance": 150, "color": "#ff4081", "opacity": 0.4, "width": 1}, "move": {"enable": true, "speed": 2, "direction": "none", "random": false, "out_mode": "out"}}, "interactivity": {"detect_on": "canvas", "events": {"onhover": {"enable": true, "mode": "repulse"}, "onclick": {"enable": true, "mode": "push"}, "resize": true}, "modes": {"repulse": {"distance": 100}, "push": {"particles_nb": 4}}}, "retina_detect": true});
     document.addEventListener('keydown', function(e) {
