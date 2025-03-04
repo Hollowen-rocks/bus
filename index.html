@@ -103,9 +103,6 @@
     .faq-item { margin-bottom: 1.5rem; }
     .faq-item h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff; }
     .faq-item p { font-size: 1rem; }
-    #didyouknow { max-width: 800px; margin: auto; padding: 3rem 2rem; text-align: center; background: rgba(255,64,129,0.05); border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-    #didyouknow h2 { color: var(--primary-color); font-size: 2.5rem; margin-bottom: 1rem; }
-    #didyouknow p { font-size: 1.1rem; margin-bottom: 1rem; }
     #video { max-width: 800px; margin: auto; padding: 3rem 2rem; text-align: center; }
     .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); margin-bottom: 2rem; }
     .video-container iframe { position: absolute; top:0; left:0; width: 100%; height: 100%; border: 0; }
@@ -311,12 +308,6 @@
         <p>He believes in discipline, persistence, and the mantra "you get out what you put in"—principles that have driven his and Gymshark’s success.</p>
       </div>
     </section>
-    <section id="didyouknow" role="region" aria-labelledby="didyouknow-heading">
-      <h2 id="didyouknow-heading" data-aos="fade-up">Did You Know?</h2>
-      <p data-aos="fade-up" data-aos-delay="150">Gymshark began as a small supplements business and evolved into one of the most influential fitness brands, with millions of social media followers and a valuation exceeding £1 billion.</p>
-      <p data-aos="fade-up" data-aos-delay="250">Ben Francis started Gymshark at just 19 years old, proving that passion and perseverance can defy all odds.</p>
-      <p data-aos="fade-up" data-aos-delay="350">The brand’s innovative digital marketing strategies have reshaped modern entrepreneurship and set a new standard in fitness.</p>
-    </section>
     <section id="video" role="region" aria-labelledby="video-heading">
       <h2 class="section-title" id="video-heading" data-aos="fade-up">Video Presentation</h2>
       <div class="video-container" data-aos="fade-up">
@@ -440,7 +431,6 @@
       gsap.to(counterNetWorth, { duration: 2, val: 1.3, ease: "power1.out", onUpdate: () => { document.getElementById('counterNetWorth').innerText = (counterNetWorth.val).toFixed(1); }});
     }
     gsap.from("#insights .insight", { duration: 1, opacity: 0, y: 50, stagger: 0.3, ease: "power2.out", scrollTrigger: { trigger: "#insights", start: "top 80%" } });
-    gsap.from("#didyouknow", { duration: 1, opacity: 0, y: 50, ease: "power2.out", scrollTrigger: { trigger: "#didyouknow", start: "top 80%" } });
     document.addEventListener('scroll', () => {
       const backToTop = document.getElementById('backToTop');
       if (window.pageYOffset > 300) { backToTop.classList.add('show'); } else { backToTop.classList.remove('show'); }
